@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: grid;
+  grid-column: (50% 50%);
+  grid-template-areas: 
+    "item1 pic1"
+    "item2 pic1"
+    "item3 pic1"
+    "item4 pic1";
+}

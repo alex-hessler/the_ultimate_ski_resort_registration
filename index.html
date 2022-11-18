@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!-- Head Information: meta, title & link to stylesheet-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The ultimate ski adventure</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<!-- Beginning of body of page-->
+  <body class="gridContainer">
+<!-- Header of page holding webpage title of webpage-->
+  <header class="item1">
+    <h1>Register for the ultimate ski adventure</h1>
+  </header>
+<!-- Main content--> 
+  <main>
+<!-- No idea how to 50/50 this correctly - ski.jpeg for page-->    
+    <aside class="pic1">
+      <img src="/assets/ski.jpeg">
+    </aside>
+<!-- Div for basic info w/ form & inputs - !!! Find out how to make each a required field w/ the '*' & required under-input label-->       
+  <div class="item2">  
+    <form>
+      <h2>Your basic info</h2>
+      <label>Name and Surname</label>
+    <br>
+      <input type="text">
+    <br>
+      <label>Email</label>
+    <br>
+      <input type="email" placeholder="example@email.com">
+      <label>Password</label>
+      <input type="password" placeholder="****">
+    </form>
+<!-- Form for Age Input w/ Two checkboxes - !!!Find out how to round checkbox-->
+    <form>
+      <label>Age</label>
+      <br>
+      <input type="checkbox" class="age_Checkbox">
+      <label>Under 18</label>
+      <br>
+      <input type="checkbox" class="age_Checkbox">
+      <label> 18 and over</label>
+      <br>
+    </form>
+  </div>
+<!-- Div for '...about yourself' w/ form & inputs---->
+  <div class="item3">
+    <h2>Tell us about yourself</h2>
+    <form>
+      <label>Your biography</label>
+      <br>
+      <input type="text">
+      <br>
+      <label>Select location</label>
+      <br>
+      <input type="text" placeholder="Mayrhofen">
+      <br>
+      <h3>What equipment would you like to rent?</h3>
+      <br>
+      <input type="checkbox"><label>Skis</label>
+      <br>
+      <input type="checkbox"><label>Helmet</label>
+      <br>
+      <input type="checkbox"><label>Goggles</label>
+      <br>
+      <input type="checkbox"><label>Ski boots</label>
+      <br>
+      <input type="checkbox"><label>Ski poles</label>
+      <br>
+    </form>
+  </div>
+<!-- Reset and submit buttons-->
+  <div class="item4">
+    <button class="resetButton">Reset</button><button class="submitButton">Submit</button>
+  </div>
+  </main>
+  </body>
+</html>
