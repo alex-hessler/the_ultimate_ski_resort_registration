@@ -1,31 +1,98 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+<!--Head Section - Can't forget 'content' is a single continuous quote vs. two ""-->    
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>The ultimate ski adventure</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> The Ultimate Ski Registration</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!-- start here -->
-  <h1>Register for the ultimate ski adventure</h1>
-  <div class="basicInfo">
-    <h2>Your basic info</h2>
-    <form>
-      <label>Name and Surname</label>
-  <br>
-      <input type="text">
-    </form>
-  <br>
-    <form>
-    <label>Email</label>
-  <br>
-    <input type="email" placeholder="example@email.com">
-    <label>Password</label>
-    <input type="password" placeholder="****">
-    </form>
-    
-  </div>
-  
-  </body>
+    <main class="container">
+<!--Section 1: Left Section - Registration Inputs-->        
+        <section class="col left-col">
+            <h1>Register for the Ultimate Ski Adventure</h1>
+            <div class="form-container">
+                <h3> Your Basic Info</h3>
+                <form>
+<!--First fieldset for Name input-->                    
+                    <fieldset>
+                        <legend for="name">Name and Surname: *</legend>
+                        <input required type="text" id="name" name="name"/>
+                    </fieldset>
+<!--Second & Third fieldset for email & password - Two Columns-->
+                    <div class="two-cols">
+                    <fieldset>
+                        <legend for="email">Email: *</legend>
+                        <input required type="email" id="email" name="email" placeholder="example@email.com"/>
+                    </fieldset>
+                    <fieldset>
+                        <legend for="password">Password: *</legend>
+                        <input required type="password" id="password" name="password" placeholder="********"/>
+                    </fieldset>
+                    </div>
+<!--Fourth fieldset for Age radio-->
+                    <fieldset>
+                        <legend for="age">Age:</legend>
+                        <input checked type="radio" name="age" id="under-18"/>
+                            <label for="age">Under 18</label>
+                            <br>
+                        <input type="radio" name="age" id="18-and-over"/>
+                            <label for="age">18 and Over</label>
+                    </fieldset>
+
+
+                    <h3>Tell us About Yourself</h3>
+                    <fieldset>
+                        <legend>Your Biography</legend>
+                        <textarea> </textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your Location:</legend>
+                        <select>
+                            <option> </option>
+                            <option>Big Sky, Mt</option>
+                            <option>Denver, Colorado</option>
+                            <option>Jackson Hole, Wyoming</option>
+                            <option>Park City, Utah</option>
+                        </select>
+                    </fieldset>
+                    <h3>What equipment would you like to rent?</h3>
+                    <fieldset>
+                        <input type="checkbox">
+                            <label>Skis</label>
+                            <br>
+                        <input type="checkbox">
+                            <label>Helmet</label>
+                            <br>
+                        <input type="checkbox">
+                         <label>Goggles</label>
+                            <br>
+                        <input type="checkbox">
+                            <label>Ski Boots</label>
+                            <br>
+                        <input type="checkbox">
+                            <label>Ski Poles</label>
+                            <br>
+                    </fieldset>
+
+
+
+
+
+
+<!--Submit & Reset Button - No idea how to set-up a 'Reset Button'-->
+                    <div class="button-container">
+                    <button id="reset-button">Reset</button>
+                    <button type="submit" id="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+<!--Section 2: Right Section - Ski Img-->       
+        <section class="col right-col">
+
+        </section>
+    </main>
+</body>
 </html>
